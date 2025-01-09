@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead, tfoot {
+            height: 50px;
+            background-color: rgb(53, 53, 53);
+            color: white
+        }
+
+        td, th {
+            border: 1px solid black;
+            font-size: 20px;
+            padding: 8px;
+            
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color: rgb(53, 53, 53);
+            top: -1px;
+        }
+
+        td.number1 {
+            width: 25px;
+            text-align: center;
+
+        }
+
+        td.number2 {
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: white;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) { /*2n*/
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.6em;
+            padding: 15px;
+            background-color: lightgray;
+            font-weight: bold;
+        }
+    </style>
+    <title>Tabelas Grandes</title>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD TH
+    -->     
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nº</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="number1">1</td>
+                <td scope="row">São Paulo</td>
+                <td class="number2">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="number1">2</td>
+                <td>Minas Gerais</td>
+                <td class="number2">21 322 692</td>
+            </tr>
+            <tr>
+                <td class="number1">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="number2">17 219 679</td>
+            </tr>
+            <tr>
+                <td class="number1">4</td>
+                <td>Bahia</td>
+                <td class="number2">14 850 513</td>
+            </tr>
+            <tr>
+                <td class="number1">5</td>
+                <td>Paraná</td>
+                <td class="number2">10 444 526</td>
+            </tr>
+            <tr>
+                <td class="number1">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="number2">11 229 915</td>
+            </tr>
+            <tr>
+                <td class="number1">7</td>
+                <td>Pernambuco</td>
+                <td class="number2">9 539 029</td>
+            </tr>
+            <tr>
+                <td class="number1">8</td>
+                <td>Ceará</td>
+                <td class="number2">9 233 656</td>
+            </tr>
+            <tr>
+                <td class="number1">9</td>
+                <td>Pará</td>
+                <td class="number2">8 664 306</td>
+            </tr>
+            <tr>
+                <td class="number1">10</td>
+                <td>Santa Catarina</td>
+                <td class="number2">8 058 447</td>
+            </tr>
+            <tr>
+                <td class="number1">11</td>
+                <td>Goiás</td>
+                <td class="number2">7 350 483</td>
+            </tr>
+            <tr>
+                <td class="number1">12</td>
+                <td>Maranhão</td>
+                <td class="number2">7 010 960</td>
+            </tr>
+            <tr>
+                <td class="number1">13</td>
+                <td>Amazonas</td>
+                <td class="number2">4 281 209</td>
+            </tr>
+            <tr>
+                <td class="number1">14</td>
+                <td>Paraíba</td>
+                <td class="number2">4 145 040</td>
+            </tr>
+            <tr>
+                <td class="number1">15</td>
+                <td>Espírito Santo</td>
+                <td class="number2">4 102 129</td>
+            </tr>
+            <tr>
+                <td class="number1">16</td>
+                <td>Mato Grosso</td>
+                <td class="number2">3 836 399</td>
+            </tr>
+            <tr>
+                <td class="number1">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="number2">3 446 071</td>
+            </tr>
+            <tr>
+                <td class="number1">18</td>
+                <td>Piauí</td>
+                <td class="number2">3 375 646</td>
+            </tr>
+            <tr>
+                <td class="number1">19</td>
+                <td>Alagoas</td>
+                <td class="number2">3 220 104</td>
+            </tr>
+            <tr>
+                <td class="number1">20</td>
+                <td>Distrito Federal</td>
+                <td class="number2">2 982 815</td>
+            </tr>
+            <tr>
+                <td class="number1">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="number2">2 901 895</td>
+            </tr>
+            <tr>
+                <td class="number1">22</td>
+                <td>Sergipe</td>
+                <td class="number2">2 291 077</td>
+            </tr>
+            <tr>
+                <td class="number1">23</td>
+                <td>Rondônia</td>
+                <td class="number2">1 746 227</td>
+            </tr>
+            <tr>
+                <td class="number1">24</td>
+                <td>Tocantins</td>
+                <td class="number2">1 577 342</td>
+            </tr>
+            <tr>
+                <td class="number1">25</td>
+                <td>Acre</td>
+                <td class="number2">880 631</td>
+            </tr>
+            <tr>
+                <td class="number1">26</td>
+                <td>Amapá</td>
+                <td class="number2">802 837</td>
+            </tr>
+            <tr>
+                <td class="number1">27</td>
+                <td>Roraima</td>
+                <td class="number2">716 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total de habitantes</th>
+                <td class="number2">212 583 720</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

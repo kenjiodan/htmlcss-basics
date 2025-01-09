@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- name == PHP // id == Javascript -->
+    <!-- Uso de Label muito importante para conexão entre a Instrução e o Input-->
+     <!--
+        Método GET & POST
+        GET: Bom para compartilhamento de URL's, e recomendável quando o envio de dados não for sensível. (Praticidade)
+        POST: Bom para "esconder" dados sensíveis, e quando os dados tiverem mais de 3000Bytes. ("Segurança" e Quantidade)
+     -->
+    <form action="cadastro.php" autocomplete="off">            
+        <h1>Meu primeiro formulário</h1>
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
