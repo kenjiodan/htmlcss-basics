@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    display: 100%;
+}
+
+nav {
+    display: none;
+}
+
+footer > a {
+    display: "@kenjiodan";
+}
