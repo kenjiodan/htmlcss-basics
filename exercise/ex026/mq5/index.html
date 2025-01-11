@@ -40,6 +40,7 @@
 
         nav {
             display: none;
+            margin: 10px -10px -10px -10px;
             background-color: gray;
         }
 
@@ -52,6 +53,11 @@
             padding: 10px;
         }
 
+        nav > ul > li:hover {
+            background-color: white;
+            transition-duration: 0.3s;
+        }
+
 
         header a {
             text-decoration: none;
@@ -59,11 +65,6 @@
             color: black;
             font-size: 1.2em;
             padding-right: 10px;
-        }
-
-        header a:hover {
-            transition-duration: 0.3s;
-            color: white;
         }
 
         main {
@@ -125,7 +126,7 @@
 <body>
     <header>
         <h1>Linux<img src="images/Linux-Logo.wine.png" alt="Linux"></h1>
-        <span class="material-symbols-outlined" onclick="clickMenu()">
+        <span id="menu"class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
         <nav id="items">
