@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Menu Responsivo</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgray;
+            height: 100vh;
+        }
+
+        header {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(161, 161, 161);
+            
+        }
+
+        header > h1 {
+            display: inline-block;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 90px;
+        }
+
+        header > h1 > img {
+            margin-bottom: -20px;
+            margin-left: -50px;
+            margin-right: -41px;
+            height: 90px;
+            width: 150px; 
+        }
+
+        nav {
+            display: none;
+            background-color: gray;
+        }
+
+        nav > ul {
+            list-style: none;
+        }
+
+        nav > ul > li {
+            border: 1px solid rgb(175, 175, 175);
+            padding: 10px;
+        }
+
+
+        header a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            font-size: 1.2em;
+            padding-right: 10px;
+        }
+
+        header a:hover {
+            transition-duration: 0.3s;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.514);
+            max-width: 90vw;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        article > h2 {
+            font-size: 1.8em;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        article > h3 {
+            margin-top: 25px;
+        }
+
+        article > ul {
+            list-style-position: inside;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        article > ul > li {
+            font-size: 1.2em;
+
+        }
+    
+        p {
+            font-size: 1.2em;
+            text-indent: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        span#menu {
+            display: block;
+            margin: 0px -10px -10px -10px;
+            padding-top: 5px;
+            height: 30px;
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+
+        span#menu:hover {
+            background-color: white;
+            transition-duration: 0.2s;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Linux<img src="images/Linux-Logo.wine.png" alt="Linux"></h1>
+        <span class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <nav id="items">
+            <ul>
+                <li class="items"><a href="#">Distros</a></li>
+                <li class="items"><a href="#">Distribuições</a></li>
+                <li class="items"><a href="#">Problemas</a></li>
+                <li class="items"><a href="#">Suporte</a></li>
+                <li class="items"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>O que é Linux?</h2>
+            <p>
+                Linux é um sistema operacional de código aberto que permite a execução de programas em computadores e outros dispositivos. Ele é baseado no kernel Linux, desenvolvido em 1991 pelo finlandês Linus Torvalds, e é um exemplo de colaboração entre empresas e entusiastas de software livre  
+            </p>
+            <p>
+                O Linux é conhecido por ser versátil e pode ser usado em diversos dispositivos, como computadores pessoais, servidores, smartphones, roteadores, televisões e máquinas industriais. Ele é multitarefa, multiusuário, e pode se conectar com outros sistemas operacionais.
+            </p>
+            <h3>Algumas características do Linux são:</h3>
+                <ul>
+                    <li>Código-fonte modificável e distribuível por qualquer pessoa, desde que respeite as licenças</li>
+                    <li>Não há licença para o seu uso</li>
+                    <li>Segurança quanto à proteção de processos executados na memória RAM</li>
+                    <li>Oferece muito mais personalização do que o Windows e MacOS</li>
+                </ul>
+            <p>
+                O Linux é normalmente encontrado em uma distribuição Linux, que inclui o kernel e o software e bibliotecas de sistema que o suportam. Algumas distribuições Linux populares são:
+            </p>
+            <p>
+                Arch Linux, CentOS, Debian, Fedora Linux, Linux Mint, openSUSE, Ubuntu.
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+           if (items.style.display == 'block') {
+            items.style.display = 'none'
+           } else {
+            items.style.display = 'block'
+           }
+           
+        }
+    </script>
+</body>
+</html>
