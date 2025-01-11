@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: inline-block;
+    }
+
+    nav > ul > li:hover {
+        background-color: rgb(255, 251, 0);
+        transition-duration: 0.3s;
+    }
+
+    nav > ul > li > a {
+        display: block;
+        color: black;
+    }
+
+    nav > ul > li {
+        border-radius: 10px;
+        padding-left: 22px;
+        display: inline-block;
+        background-color: white;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    main {
+        max-width: 768px;
+    }
+
+    span#menu {
+        display: none;
+    }
+}
+    
