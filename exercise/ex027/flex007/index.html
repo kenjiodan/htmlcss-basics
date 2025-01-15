@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        div.container {
+            margin: 10px 0px;
+            display: flex;
+            height: 500px;
+            align-items: flex-start;
+
+            background-color: chocolate;
+        }
+
+        div.items {
+            text-align: center;
+            padding: 20px;
+           
+
+            background-color: darkblue;
+            border: 1px solid rgb(0, 0, 0);
+            color: white;
+        }
+
+        #o1 { /*Ordenamento com a prop ORDER*/
+            order: 20;
+        }
+        #o2 {
+            order: -10;
+        }
+        #o3 {
+            order: 8;
+        }
+        #o4 {
+            order: 4;
+        }
+        #o5 {
+            order: 3;
+        }
+        #o6 {
+            order: 3;
+        }
+        #o7 {
+            order: 1;
+        }
+
+        #a1 { /*Alinhamento Individual com ALIGN-SELF*/
+            align-self: auto;
+        }
+        #a2 {
+            align-self: center;
+        }
+        #a3 {
+            align-self: flex-end;
+        }
+        #a4 {
+            align-self: auto;
+        }
+        #a5 {
+            align-self: stretch;
+        }
+        #a6 {
+            align-self: stretch;
+        }
+        #a7 {
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="o1">A</div>
+        <div class="items" id="o2">B</div>
+        <div class="items" id="o3">C</div>
+        <div class="items" id="o4">D</div>
+        <div class="items" id="o5">E</div>
+        <div class="items" id="o6">F</div>
+        <div class="items" id="o7">G</div>
+    </div>
+    <div class="container">
+        <div class="items" id="a1">A</div>
+        <div class="items" id="a2">B</div>
+        <div class="items" id="a3">C</div>
+        <div class="items" id="a4">D</div>
+        <div class="items" id="a5">E</div>
+        <div class="items" id="a6">F</div>
+        <div class="items" id="a7">G</div>
+    </div>
+</body>
+</html>

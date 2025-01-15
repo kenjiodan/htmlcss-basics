@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container {
+            display: flex;
+            height: 180px;
+            flex-flow: column wrap-reverse;
+            background-color: chocolate;
+        }
+
+        div.items {
+            flex: auto;
+            text-align: center;
+            padding: 10px;
+           
+
+            background-color: darkblue;
+            border: 1px solid rgb(0, 0, 0);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">Exemplo de Box A</div>
+        <div class="items">Exemplo de Box B</div>
+        <div class="items">Exemplo de Box C</div>
+        <div class="items">Exemplo de Box D</div>
+        <div class="items">Exemplo de Box E</div>
+        <div class="items">Exemplo de Box F</div>
+    </div>
+</body>
+</html>
