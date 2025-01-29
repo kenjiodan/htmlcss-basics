@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            /*grid-template-columns:20% 30% 50%;*/
+            /*grid-template-columns: 1fr 2fr 1fr;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            /*grid-auto-rows: minmax(200px, auto);*/
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+        }
+
+        .items {
+            background-color: rgb(41, 41, 255);
+            color: white;
+            padding: 30px;
+        }
+
+        .items:nth-child(even) {
+            background-color: lightgray;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis adipisci blanditiis dolorem vel a molestiae possimus doloremque temporibus ratione nesciunt ab odit nisi consequatur quaerat iure ea in, modi ex deleniti repellat illo voluptatem obcaecati ullam. Dolor laborum quis dignissimos inventore eum, assumenda reiciendis, molestias esse suscipit totam minus.</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+    </div>
+</body>
+</html>
