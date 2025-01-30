@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(150px, auto));
+            /*align-items: start;
+            justify-items: end;*/
+        }
+
+        .items {
+            background-color: rgb(50, 173, 255);
+            color: white;
+            padding: 30px;
+        }
+
+        .one {
+            justify-self: end;
+            align-self: end;
+        }
+
+        .three {
+            justify-self: start;
+            align-self: center;
+        }
+
+        .four {
+            justify-self: end;
+            align-self: center;
+        }
+
+        .six {
+            justify-self: start;
+            align-self: end;
+        }
+
+        .items:nth-child(even) {
+            background-color: rgba(66, 66, 66, 0.849);
+        }
+    </style>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">1</div>
+        <div class="items two">2</div>
+        <div class="items three">3</div>
+        <div class="items four">4</div>
+        <div class="items five">5</div>
+        <div class="items six">6</div>
+    </div>
+</body>
+</html>

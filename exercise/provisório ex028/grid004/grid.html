@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(150px, auto));
+        }
+
+        .items {
+            background-color: rgb(50, 173, 255);
+            color: white;
+            padding: 30px;
+        }
+
+        .items:nth-child(even) {
+            background-color: rgba(66, 66, 66, 0.849);
+        }
+
+        .four {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: span 3;
+            grid-gap: 10px;
+        }
+
+        .four p {
+            border: 1px solid white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .six {
+            grid-column: 3;
+        }
+    </style>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">one</div>
+        <div class="items two">two</div>
+        <div class="items three">three</div>
+        <div class="items four">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+        </div>
+        <div class="items five">five</div>
+        <div class="items six">six</div>
+    </div>
+</body>
+</html>
