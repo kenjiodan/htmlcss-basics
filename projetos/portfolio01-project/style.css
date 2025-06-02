@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: coral;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+
+.header-name {
+    font-size: 50px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.header-menu {
+    display: flex;
+    padding: 10px 24px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.header-menu .link-header:hover {
+    color: brown;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
