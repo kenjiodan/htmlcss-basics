@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100px;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: coral;
 }
+
+/* Header-configuration */
 
 .header {
     display: flex;
@@ -41,4 +47,23 @@ body {
     font-size: 18px;
     transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
+
+/* Presentation-configuration */
+
+.presentation {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.presentation-text {
+    width: 600px;
+
+    h2 {
+        margin-bottom: 18px;
+    }
+}
+
 
