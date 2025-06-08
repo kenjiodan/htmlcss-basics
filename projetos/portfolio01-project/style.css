@@ -2,31 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+@font-face {
+    font-family: "Night Shift";
+    src: url(fonts/night-shift-font/NightShiftRegular-KV8eZ.otf);
+}
+
+:root {
+    --primary: #151116;
+    --secundary: #EFECCA;
+    --tertiary: #817F75;
+
+    
+    --specialn1: #FF9505;
+    --specialn2: #260049;
 }
 
 img {
-    width: 100px;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: coral;
+    width: 100%;
 }
 
 /* Header-configuration */
 
-.header {
+.header-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 10px 24px;
+
+    background-color: var(--primary);
     
 }
 
-.header-name {
-    font-size: 50px;
+.header-logo {
+    font-size: 48px;
     font-weight: bolder;
     color: aliceblue;
+    font-family: "Chewy", sans-serif;
+}
+
+.header-logo:hover {
+    color: var(--specialn1);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .header-menu {
@@ -35,6 +56,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    font-size: 20px;
+    font-weight: bold;
 
     a {
         color: white;
@@ -43,9 +66,8 @@ body {
 }
 
 .header-menu .link-header:hover {
-    color: brown;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    color: var(--specialn1);
+    transition: color 0.3s ease-in-out;
 }
 
 /* Presentation-configuration */
@@ -55,15 +77,46 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 80px;
     gap: 24px;
 }
 
 .presentation-text {
-    width: 600px;
-
+    max-width: 600px;
+    font-size: 2em;
     h2 {
         margin-bottom: 18px;
     }
+
+    strong {
+        color: var(--specialn2);
+    }
 }
 
+.presentation-image {
+
+    border-radius: 120px;
+    overflow: hidden;
+    img {
+        width: 350px;
+    }
+}
+
+.footer-group {
+    background-color: var(--primary);
+    color: var(--secundary);
+    text-align: center;
+    padding: 10px 24px;
+    
+    a {
+        text-decoration: none;
+        color: var(--secundary);
+    }
+
+    a:hover {
+        color: var(--specialn2);
+        transition-duration: 0.3s;
+    }
+}
+    
 
