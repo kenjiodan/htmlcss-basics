@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-   
 }
 
 @font-face {
-    font-family: "Night Shift";
-    src: url(fonts/night-shift-font/NightShiftRegular-KV8eZ.otf);
+    font-family: "IBM";
+    src: url(fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
 }
 
 :root {
@@ -18,11 +17,23 @@
 
     
     --specialn1: #FF9505;
-    --specialn2: #260049;
+    --specialn2: #6800ca;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--primary);
 }
 
 img {
     width: 100%;
+}
+
+strong {
+        color: var(--specialn2);
 }
 
 /* Header-configuration */
@@ -34,14 +45,14 @@ img {
     padding: 10px 24px;
 
     background-color: var(--primary);
-    
 }
 
 .header-logo {
     font-size: 48px;
     font-weight: bolder;
     color: aliceblue;
-    font-family: "Chewy", sans-serif;
+    font-family: "IBM", sans-serif;
+    
 }
 
 .header-logo:hover {
@@ -58,10 +69,12 @@ img {
     gap: 24px;
     font-size: 20px;
     font-weight: bold;
+    
 
     a {
         color: white;
         text-decoration: none;
+        font-family: "IBM", sans-serif;
     }
 }
 
@@ -73,40 +86,53 @@ img {
 /* Presentation-configuration */
 
 .presentation {
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex: 0 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 80px;
-    gap: 24px;
+    padding: 24px;
+    height: 100%;
+
+    color: var(--secundary);
+    background-image: url(images/back_new.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+
+    box-shadow: inset 15px 15px 95px var(--primary);
+
 }
 
 .presentation-text {
-    max-width: 600px;
-    font-size: 2em;
+    opacity: 1;
+    max-width: 750px;
+    font-size: 24px;
+    text-shadow: -5px 5px 12px rgba(0, 0, 0, 0.651);
+    font-style: italic;
     h2 {
+        font-size: 2em;
         margin-bottom: 18px;
-    }
-
-    strong {
-        color: var(--specialn2);
     }
 }
 
 .presentation-image {
-
-    border-radius: 120px;
+    opacity: 1;
+    width: 350px;
+    border-radius: 160px;
     overflow: hidden;
-    img {
-        width: 350px;
-    }
+    box-shadow: 10px 10px 10px #22004252;
 }
+
+/*Footer Group*/
 
 .footer-group {
     background-color: var(--primary);
     color: var(--secundary);
     text-align: center;
     padding: 10px 24px;
+    width: 100%;
     
     a {
         text-decoration: none;
