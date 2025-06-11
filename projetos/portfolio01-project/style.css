@@ -5,19 +5,13 @@
     font-family: "Montserrat", sans-serif;
 }
 
-@font-face {
-    font-family: "IBM";
-    src: url(fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
-}
-
 :root {
     --primary: #151116;
     --secundary: #EFECCA;
     --tertiary: #817F75;
 
-    
-    --specialn1: #FF9505;
-    --specialn2: #6800ca;
+    --specialn1: #6800ca;
+    --specialn2: #3b0072;
 }
 
 body {
@@ -33,7 +27,11 @@ img {
 }
 
 strong {
-        color: var(--specialn2);
+        color: var(--specialn1);
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header-configuration */
@@ -44,19 +42,20 @@ strong {
     align-items: center;
     padding: 10px 24px;
 
-    background-color: var(--primary);
+    background-color: #000000;
 }
 
 .header-logo {
-    font-size: 48px;
+    font-size: 4em;
+    font-style: normal;
     font-weight: bolder;
-    color: aliceblue;
-    font-family: "IBM", sans-serif;
-    
+    color: var(--secundary);
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
 }
 
 .header-logo:hover {
-    color: var(--specialn1);
+    color: var(--specialn2);
     transition: color 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -74,12 +73,12 @@ strong {
     a {
         color: white;
         text-decoration: none;
-        font-family: "IBM", sans-serif;
+
     }
 }
 
 .header-menu .link-header:hover {
-    color: var(--specialn1);
+    color: var(--specialn2);
     transition: color 0.3s ease-in-out;
 }
 
@@ -92,16 +91,14 @@ strong {
     justify-content: space-evenly;
     align-items: center;
     padding: 24px;
-    height: 100%;
+    
+    min-height: 550px;
 
     color: var(--secundary);
     background-image: url(images/back_new.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-
-
-    box-shadow: inset 15px 15px 95px var(--primary);
 
 }
 
@@ -119,11 +116,50 @@ strong {
 
 .presentation-image {
     opacity: 1;
-    width: 350px;
-    border-radius: 160px;
+    width: 450px;
     overflow: hidden;
-    box-shadow: 10px 10px 10px #22004252;
 }
+
+/*Hard Skill group*/
+.hard-skills-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+
+    background-color: var(--secundary);
+    color: var(--primary);
+}
+
+.hard-skills-items {
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: square;
+        list-style-position: inside;
+        font-style: italic;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.hard-skills-image {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 300px;
+    img {
+        width: 100px;
+    }
+
+}
+
+
 
 /*Footer Group*/
 
