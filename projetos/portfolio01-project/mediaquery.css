@@ -1,0 +1,13 @@
+@media screen and (max-width: 1247px) {
+    .presentation {
+        min-height: 850px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .presentation {
+        min-height: 1100px;
+    }
+}
+
