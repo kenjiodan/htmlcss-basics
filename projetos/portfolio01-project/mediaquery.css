@@ -2,11 +2,19 @@
     .presentation {
         min-height: 850px;
     }
+
+    .skills-group {
+        min-height: 850px;
+    }
     
 }
 
 @media screen and (max-width: 767px) {
     .presentation {
+        min-height: 1100px;
+    }
+
+    .skills-group {
         min-height: 1100px;
     }
 }

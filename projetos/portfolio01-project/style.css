@@ -69,10 +69,9 @@ a {
     gap: 24px;
     font-size: 20px;
     font-weight: bold;
-    
 
     a {
-        color: white;
+        color: var(--secundary);
         text-decoration: none;
 
     }
@@ -95,11 +94,10 @@ a {
     min-height: 550px;
 
     color: var(--secundary);
-    background-color: #000000;
+    background-image: url(images/background01.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: bottom right;
     background-repeat: no-repeat;
-
 }
 
 .presentation-text {
@@ -122,10 +120,13 @@ a {
     
 }
 
-/*Hard Skill group*/
-.hard-skills-group {
+/*Skill group*/
+.skills {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 24px;
+    
     align-items: center;
     width: 100%;
     min-height: 600px;
@@ -134,7 +135,7 @@ a {
     color: var(--primary);
 }
 
-.hard-skills-items {
+.hard-skills-items, .soft-skills-items {
     h2 {
         margin-bottom: 10px;
     }
@@ -150,7 +151,11 @@ a {
     }
 }
 
-.hard-skills-image {
+
+.hard-skills-image, .soft-skills-image  {
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -160,7 +165,6 @@ a {
     }
 
 }
-
 
 
 /*Footer Group*/
